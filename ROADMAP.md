@@ -2,7 +2,7 @@
 
 I like art. Art is pretty. I want people to look at art. I want to get more confortable with APIs and React/Next. Use components an appropriate amount to prevent confusion and show off my skills as a developer. I want multiple routes.
 
-## Artwork Discovery
+## Explore Art
 
 - [ ] Call API successfully
   - [ ] Do a test call to make sure I understand the API

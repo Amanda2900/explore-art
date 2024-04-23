@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 async function getArtwork(id) {
@@ -22,13 +23,14 @@ export default async function Home() {
   return (
     <main> 
       <h1 className="font-bold">Artwork Search</h1>
+      <h2><Link href="./search/page.jsx">Search!</Link></h2>
       <h2>{data.data.title}</h2>
       <h2>{data.data.artist_display}</h2>
       <Image 
         src={image} 
         width={500}
         height={500}
-        alt={data.title}
+        alt={data.data.title}
       />
     </main>
   );
