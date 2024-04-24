@@ -8,8 +8,8 @@ export default async function ImageDetails({ params }) {
 
 	return (
 		<div className="image-details">
-			<h2><Link href="../../search">Back to Search</Link></h2>
-			<h2>{artwork.data.title}</h2>
+			<h2 className="hover:underline" ><Link href="../../search">Back to Search</Link></h2>
+			<h2 className="font-bold">{artwork.data.title}</h2>
 			{artwork.data.artist_title !== null ? (
 				<p>
 					{artwork.data.artist_title}

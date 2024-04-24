@@ -8,7 +8,7 @@ export default function SearchForm({ onSearchSubmit }) {
 		setQuery(event.target.value);
 	}
 
-  function handleFormSubmit(event) {
+  function handleFormSubmit() {
 		onSearchSubmit(query);
 	}
 
