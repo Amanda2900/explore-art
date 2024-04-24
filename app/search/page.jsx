@@ -1,8 +1,9 @@
 'use client'
 import { useState } from "react";
-import SearchForm from "../components/form";
-import searchArtwork from "../utils/api";
-import { ImageList } from "../components/imageList";
+import SearchForm from "../components/SearchForm";
+import { searchArtwork } from "../utils/api";
+import { ImageList } from "../components/ImageList";
+import Link from "next/link";
 
 export default function Search() {
   const [data, setData] = useState([]);
@@ -16,6 +17,7 @@ export default function Search() {
   return (
     <main> 
       <h1>Search Page</h1>
+      <h2><Link href="/">Back to Home</Link></h2>
       <div>
         <SearchForm onSearchSubmit={onSearchSubmit}/>
         <ImageList data={data} />
