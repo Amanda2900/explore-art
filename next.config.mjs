@@ -10,11 +10,6 @@ const nextConfig = {
       },
     ],
   },
-  theme: {
-    extend: {
-      backgroundImage: { 'background': "url('/public/Art_Institute_of_Chicago_logo.svg')" }
-    },
-  },
 };
 
 export default nextConfig;
