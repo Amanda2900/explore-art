@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
   
-    <nav className="bg-white border-gray-200 dark:bg-gray-800">
+    <nav className="border-gray-200 bg-gray-800">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://github.com/Amanda2900/explore-art" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/sculpture.png" class="h-8" alt="Sculpture line art icon" />
@@ -26,7 +26,7 @@ export default function Navbar() {
         </button>
         <div className={"w-full md:block md:w-auto lg:flex" +
               (navbarOpen ? " flex" : " hidden")} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  bg-gray-800 md:bg-gray-800 dark:border-gray-700">
             <li>
               <a href={homeRoute} className="block py-2 px-3 rounded md:border-0 md:hover:text-rose-500 md:p-0 text-white hover:bg-rose-500 hover:text-white md:hover:bg-transparent" aria-current="page">Home</a>
             </li>
@@ -43,7 +43,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-
-
   )
 };
