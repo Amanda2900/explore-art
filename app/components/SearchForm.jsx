@@ -13,7 +13,7 @@ export default function SearchForm({ onSearchSubmit }) {
 	}
 
   return (
-    <div className="mb-10">
+    <div className="mb-10 flex flex-col items-center">
       <form action={handleFormSubmit} className="w-1/2">
         <label htmlFor="search-field" className="sr-only">Label</label>
         <div className="relative flex rounded-lg shadow-sm">
