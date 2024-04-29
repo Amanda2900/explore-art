@@ -3,7 +3,6 @@ import { useState } from "react";
 import SearchForm from "../components/SearchForm";
 import { searchArtwork } from "../utils/api";
 import { ImageList } from "../components/ImageList";
-import Link from "next/link";
 
 export default function Search() {
   const [data, setData] = useState([]);
@@ -16,11 +15,12 @@ export default function Search() {
 
   return (
     <main> 
-      <h1>Search Page</h1>
-      <h2 className="hover:underline" ><Link href="/">Back to Home</Link></h2>
-      <div>
+      <div className="text-center mx-10 mt-10">
+      <h1 className="font-bold text-2xl mb-5 "> Search the Art Institute of Chicago</h1>
         <SearchForm onSearchSubmit={onSearchSubmit}/>
-        <ImageList data={data} />
+        <div className="bg-top h-screen bg-no-repeat bg-opacity-75" style={{backgroundImage: "url(/Art_Institute_of_Chicago_logo.png)"}}>
+            <ImageList data={data} />
+        </div>
       </div>
     </main>
   );
