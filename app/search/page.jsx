@@ -2,7 +2,7 @@
 import { useState } from "react";
 import SearchForm from "../components/SearchForm";
 import { searchArtwork } from "../utils/api";
-import { ImageList } from "../components/ImageList";
+import { ImageList } from "../components/imageList";
 
 export default function Search() {
   const [data, setData] = useState([]);
