@@ -4,6 +4,8 @@
 
 In Explore Art, I'm delving into the Art Institute of Chicago's API with React and Next.js, aiming to create an immersive digital experience that seamlessly showcases the museum's extensive collection. Users are able to search the public domain images available through the Art Institute's API and then view hi-resolution images of each piece.
 
+[Check out Explore Art here!](https://explore-art.vercel.app/)
+
 ## Screenshot
 
 ![Screenshot of search page](public/search_page_screenshot.png)

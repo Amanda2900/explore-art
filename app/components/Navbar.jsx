@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="border-gray-200 bg-gray-800">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://github.com/Amanda2900/explore-art" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/sculpture.png" class="h-8" alt="Sculpture line art icon" />
+            <img src="/sculpture.png" className="h-8" alt="Sculpture line art icon" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" rel="noopener noreferrer" target="_blank">Explore Art</span>
         </a>
         <button type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 hover:bg-gray-700 focus:ring-gray-600" onClick={() => setNavbarOpen(!navbarOpen)} aria-controls="navbar-default" aria-expanded="false">
