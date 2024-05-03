@@ -6,9 +6,9 @@ export default async function ImageDetails({ params }) {
 
 	return (
 		
-		<figure class="max-w-full m-10 flex flex-col items-center justify-center">
-			<img class="h-auto max-w-full rounded-lg" src={`https://www.artic.edu/iiif/2/${artwork.data.image_id}/full/843,/0/default.jpg`} aalt={artwork.data.title}/>
-			<figcaption class="mt-2 text-sm text-center text-gray-800">
+		<figure className="max-w-full m-10 flex flex-col items-center justify-center">
+			<img className="h-auto max-w-full rounded-lg" src={`https://www.artic.edu/iiif/2/${artwork.data.image_id}/full/843,/0/default.jpg`} alt={artwork.data.title}/>
+			<figcaption className="mt-2 text-sm text-center text-gray-800">
 				<h2 className="font-bold">{artwork.data.title}</h2>
 				{artwork.data.artist_title !== null ? (
 					<p>
